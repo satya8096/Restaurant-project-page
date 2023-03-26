@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@400;700&family=Libre+Baskerville&family=Merriweather&family=Niconne&family=Oleo+Script&family=Shrikhand&family=Signika+Negative:wght@700&display=swap');
+
+/* Universal selector */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Home page background */
+.div1{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(./images/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+.divabout{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(./images/depositphotos_48701865-stock-photo-about-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.divmenu{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(./images/istockphoto-1155114351-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.divgallery{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(./images/photo-1517248135467-4c7edcad34c4.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+/* Navgation page */
+
+nav{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: sticky;
+}
+nav ul{
+    margin-left: 55px;
+    overflow: hidden;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 20px;
+    float: left;
+}
+nav ul li a{
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* Buttons */
+
+#btn1,#btn2{
+    padding: 10px 20px 10px 20px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+}
+#btn1{
+    margin-left: 15px;
+}
+#btn2{
+    margin-left: 75px;
+}
+#btn1:hover,#btn2:hover{
+    background-color: black;
+    transition: all 0.4s;
+}
+nav a:hover{
+    color: springgreen;
+    transition: all 0.4s;
+}
+#btn4{
+    padding: 17px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+    animation: birnanimation 4s infinite;
+    position: fixed;
+    text-decoration: none;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Enjoy content */
+
+.enjoyhead{
+    height: 60%;
+    padding-top: 6%;
+    background-color: #27ae60;
+    color: white;
+    text-align: center;
+    margin: 5% 0%;
+}
+.enjoyhead h1{
+    padding-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.enjoyhead a{
+    text-decoration: none;
+    color: white;
+    margin-top: 2%;
+    padding: 0.6%;
+    background-color: #FF8811;
+    border-radius: 5px;
+    font-family: 'Libre Baskerville', serif;
+    animation: btnanimation 4s infinite;
+}
+
+/* Home Page Service Content */
+
+.serveheading{
+    text-align: center;
+    margin: 3% 0%;
+    padding: 2% 0%;
+    background-color: #FF729F;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+}
+.serve1{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.serve1 .servepic1{
+    margin: 5% 5%;
+    padding: 2%;
+    text-align: center;
+    background-color:#85BAA1;
+    border-radius: 10px;
+}
+.serve1 .servepic1 img{
+    padding-bottom: 4%;
+}
+.serve1 .servepic1 h3{
+    padding-bottom: 2%;
+}
+/* Home page Review Content */
+
+.reviewheading{
+    margin: 3% 0%;
+    padding: 2% 0%;
+    text-align: center;
+    background-color: #FF8811;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+}
+.review h3{
+    padding-bottom: 5%;
+}
+.review{
+    width: 20%;
+    margin: 3% 2%;
+    padding: 4% 1.8%;
+    color: white;
+    background-color:#1F487E;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.customerreviews{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3%;
+}
+
+/* About Page */
+
+.aboutheading{
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+    padding: 3% 0%;
+    margin: 4% 0%;
+    font-family: 'Libre Baskerville', serif;
+}
+.aboutcontent{
+    margin: 0% 10%;
+    margin-bottom: 5%;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    background-color: cornflowerblue;
+    padding: 4%;
+    border-radius: 10px;
+}
+.aboutcontent h2{
+    text-align: center;
+    padding-bottom: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.aboutcontent p{
+    font-size: 18px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+
+}
+
+/* Menu page Items */
+
+.div2{
+    height: 321px;
+    color: white;
+    text-align: center;
+}
+.div2 h1{
+    text-transform: capitalize;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 60px;
+    margin-top: 240px;
+}
+.divcontact{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(./images/contact-us-concept-icons-such-as-mobile-phone-e-mail-address-chat-global-communication-on-dark-blue-background-for-presentation-web-banner-article-b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+#para1{
+    font-size: 25px;
+}
+.heading{
+    text-align: center;
+    color:blue;
+    font-family: 'Oleo Script', cursive;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    background-color: lightseagreen;
+}
+header h2{
+    margin-top: 40px;
+}
+/* Nonveg items heading */
+
+.biriyanihead{
+    padding: 30px 0px 30px 0px;
+    margin: 25px 0px 25px 0px;
+    font-size: 40px;
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/* Cooldrinks Items */
+
+.biriyanihead1{
+    padding: 30px 0px;
+    margin: 25px 0px;
+    font-size: 40px;
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+}
+.container{
+    background-color: #27ae60;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    row-gap: 100px;
+    column-gap: 100px;
+    padding: 100px;
+}
+.container1{
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    row-gap: 100px;
+    column-gap: 100px;
+    padding: 100px;
+    min-height: 2000px;
+}
+.btn{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btn:hover{
+    background-color: cornflowerblue;
+    color:white;
+    transition: all 0.3s;
+}
+
+/* Price Styles */
+
+.price{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    animation: btnanimation 4s infinite;
+    font-size: 17px;
+}
+
+/* Food items */
+
+.div3{
+    background-color: aqua;
+    height: 310px;
+    text-align: center;
+}
+.div4{
+    background-color: red;
+    height: 310px;
+    text-align: center;
+}
+.div5{
+    background-color: blue;
+    height: 310px;
+    text-align: center;
+}
+.div6{
+    background-color: green;
+    height: 310px;
+    text-align: center;
+}
+.div7{
+    background-color: yellow;
+    height: 310px;
+    text-align: center;
+}
+.div8{
+    background-color: springgreen;
+    height: 310px;
+    text-align: center;
+}
+.div9{
+    background-color: chocolate;
+    height: 310px;
+    text-align: center;
+}
+.div10{
+    background-color: lightgray;
+    height: 310px;
+    text-align: center;
+}
+.div11{
+    background-color:crimson;
+    height: 310px;
+    text-align: center;
+}
+.div12{
+    background-color:darkkhaki;
+    height: 310px;
+    text-align: center;
+}
+.div13{
+    background-color: darkseagreen;
+    height: 310px;
+    text-align: center;
+}
+.div14{
+    background-color: gold;
+    height: 310px;
+    text-align: center;
+}
+.div15{
+    background-color:blueviolet;
+    height: 310px;
+    text-align: center;
+}
+.div16{
+    background-color:orange;
+    height: 310px;
+    text-align: center;
+}
+.div17{
+    background-color: black;
+    height: 310px;
+    text-align: center;
+}
+.div18{
+    background-color: yellow;
+    height: 310px;
+    text-align: center;
+}
+.div19{
+    background-color: springgreen;
+    height: 310px;
+    text-align: center;
+}
+.div20{
+    background-color: chocolate;
+    height: 310px;
+    text-align: center;
+}
+.div21{
+    background-color: lightgray;
+    height: 310px;
+    text-align: center;
+}
+.div22{
+    background-color:crimson;
+    height: 310px;
+    text-align: center;
+}
+.div23{
+    background-color:darkkhaki;
+    height: 310px;
+    text-align: center;
+}
+.div24{
+    background-color: darkseagreen;
+    height: 310px;
+    text-align: center;
+}
+.div25{
+    background-color: gold;
+    height: 310px;
+    text-align: center;
+}
+.div26{
+    background-color:blueviolet;
+    height: 310px;
+    text-align: center;
+}
+.div27{
+    background-color:orange;
+    height: 310px;
+    text-align: center;
+}
+.div28{
+    background-color: rgb(137, 0, 235);
+    height: 310px;
+    text-align: center;
+}
+.div29{
+    background-color: rgb(255, 200, 3);
+    height: 310px;
+    text-align: center;
+}
+.div30{
+    background-color: black;
+    height: 310px;
+    text-align: center;
+}
+.same:hover{
+    box-shadow: 0px 1px 10px blue;
+    transition: all 0.2s;
+}
+
+/* Button animation */
+
+@keyframes btnanimation {
+    0%{
+        background-color: indigo;
+        color:white;
+    }
+    20%{
+        background-color: lightcoral;
+        color: white;
+    }
+    40%{
+        background-color: darkslategrey;
+        color: white;
+    }
+    60%{
+        background-color: deepskyblue;
+        color: black;
+    }
+    80%{
+        background-color: chocolate;
+        color: white;
+    }
+    100%{
+        background-color: deeppink;
+        color: white;
+    }
+}
+
+/* Price Animation */
+
+@keyframes birnanimation {
+    0%{
+        background-color: red;
+        color:white;
+    }
+    20%{
+        background-color: blue;
+        color: white;
+    }
+    40%{
+        background-color:chartreuse;
+        color: white;
+    }
+    60%{
+        background-color: deepskyblue;
+        color: white;
+    }
+    80%{
+        background-color: chocolate;
+        color: white;
+    }
+    100%{
+        background-color: deeppink;
+        color: white;
+    }
+}
+
+@media background and (min-width:710px){
+    .div1{
+        width: 100vw;
+        height: 100vh;
+    }    
+}
+
+
+/* gallery page */
+
+
+.galleryheading{
+    text-align: center;
+    color: white;
+    background-color: chocolate;
+    margin-top: 5%;
+    padding: 3% 0%;
+    font-family: 'Libre Baskerville', serif;
+}
+.allpics{
+    text-align: center;
+}
+.gallery{
+    margin: 5% 0%;
+}
+.gallerybackground{
+    background-color:#27ae60;
+}
+.gallery img{
+    border-radius: 15px;
+}
+.gallery img:hover{
+    box-shadow: blue;
+}
+#galleryfirst{
+    padding-top: 10%;
+}
+#lastpic{
+    padding-bottom: 10%;
+}
+
+/* Feedback Form */
+
+.divfeedback{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(./images/istockphoto-1259867601-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form1{
+    padding: 50px 50px 50px 100px;
+    margin-left: 260px;
+    margin-right: 230px;
+    background-color: lightcyan;
+}
+.form1 input{
+    padding: 3px 10% 3px 5px;
+    border: none;
+    outline: none;
+}
+#feedform{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(./images/istockphoto-1259867601-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+#feed{
+    text-align: center; 
+    padding: 10px;
+    color: white;
+    background-color: chocolate;
+    margin-left: 225px; 
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+/* Contact Us form */
+
+
+.contactform1{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(./images/contact-us-concept-icons-such-as-mobile-phone-e-mail-address-chat-global-communication-on-dark-blue-background-for-presentation-web-banner-article-b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactform{
+    padding: 2%;
+    text-align: center;
+    color: rgb(0, 20, 168);
+    background-color: rgb(255, 215, 105);
+    margin: 10% 30% 10% 30%;
+    border-radius: 5px;
+}
+.contactform1 input{
+    padding: 10px 30px 10px 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+.contactform1 button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: chocolate;
+    color: rgb(255, 255, 255);
+}
+.contactform1 button:hover{
+    background-color: springgreen;
+    color:black;
+}
+.googlemap{
+    text-align: center;
+    margin-bottom: 10%;
+}
+.googlemap h2{
+    color: white;
+    font-size: 30px;
+}
+.googlemap img{
+    border-radius: 4px;
+}
+.googlemap img:hover{
+    box-shadow: 0px 0px 20px blue;
+}
+.divdetails{
+    margin: 5% 30%;
+    color: white;
+    padding-left: 12%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #27ae60;
+    border-radius: 5%;
+}
+.divdetails address{
+    line-height: 25px;
+}
+.divdetails:hover{
+    box-shadow: 0px 0px 15px white;
+} 
+
+/* Footer Items */
+
+.footeritems{
+    display: flex;
+    align-content: space-around;
+    margin: auto;
+}
+footer{
+    background-color: aliceblue;
+    min-height: 160px;
+    background-color: #ffe100ea;
+}
+footer h2{
+    font-family: 'Signika Negative', sans-serif;
+}
+.footer1{
+    font-size: 18px;
+    min-height: 80px;
+    background-color: rgb(92, 92, 92);
+    color: rgb(255, 255, 255);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.services1{
+    margin: 0px auto;
+}
+.services1 ul{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 24px;
+    list-style-type: none;
+}
+.reports ul{
+    list-style-type: none;
+    line-height: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#footp1{
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.notify{
+    text-align: center;
+    margin: 0px auto;
+}
+.notify input{
+    padding: 6px 20px 6px 6px;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.notify button{
+    cursor: pointer;
+    padding: 5px 20px 5px 20px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 55, 255);
+    color: white;
+}
+.ordernow{
+    display: block;
+    text-align: center;
+}
+.btnordernow{
+    padding: 5px 20px 5px 20px ;
+    background-color: rgb(0, 55, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnordernow a{
+    text-decoration: none;
+    color: white;
+}
+.address{
+    margin: auto;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footericons{
+    text-align: center;
+}
+.footericons img{
+    margin: 10px 10px;
+}

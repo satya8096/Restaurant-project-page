@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/pngaaa.com-412497.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#top" id="btn4"><i class='fas fa-arrow-up'></i></a>
+    <div class="divfeedback" id="top">
+
+        <!-- Navgation page -->
+
+        <nav>
+            <img src="./images/pngaaa.com-412497.png" alt="logo" width="80px">
+            <h1 style="letter-spacing: 1px; margin-left: 15px;"><span style="color: springgreen; font-size: 30px;">H</span>ome <span style="color: red;">F</span>ood</h1>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./feedback.html">Feed Back</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Feedback main heading -->
+
+        <div class="div2">
+            <h1>Send Feedback Here!</h1><br>
+            <p id="para1">We are always here to serve you!</p>
+        </div>
+    </div>
+    <section>
+        <form id="feedform" autocomplete="off">
+            <header class="form1" >
+                <p style="font-size: 30px; text-align: center;">Please Give Your Valuable Feedback!</p><br><br>
+                <h1 style="text-align: center;">Restaurant Feedback Form</h1> <br>
+            <p style="text-align: center;">Please help us improve our restaurant services by filling in our feedback form. Thank you!</p>
+            <br>
+            <label for="fname" >First Name : </label>
+            <input type="text" id="fname" placeholder="First Name" style="padding-top: 5px; padding-bottom: 5px; margin-left: 5px;" required><br><br>
+            <label for="lname">Last Name : </label>
+            <input type="text" id="lname" placeholder="Last Name" style="padding-top: 5px; padding-bottom: 5px; margin-left: 5px;"><br><br>
+            <label for="email">Email : </label>
+            <input type="email" id="email" placeholder="Email" style="padding-top: 5px; padding-bottom: 5px; margin-left: 5px;" required><br><br>
+            <label for="loc">Location You Visited : </label>
+            <input type="text" id="loc" placeholder="Location" style="padding-top: 5px; padding-bottom: 5px; margin-left: 5px;" required><br><br>
+            <label for="day">Day Visited : </label>
+            <input type="date" id="day" placeholder="DD/MM/YY" style="padding-top: 5px; padding-bottom: 5px; margin-left: 5px;" required><br><br>
+            <label for="age">Age : <input type="text" placeholder="Enter Your Age" id="age"  style="padding-top: 5px; padding-bottom: 5px; margin-left: 5px;" required></label><br><br>
+            <label>Dine in / Take Out</label><br><br>
+            <label for="take"><input type="radio" id="take" value="take" name="take">Dine In</label><br><br>
+            <label for="take1"><input type="radio" id="take" value="take" name="take">Take Out</label><br><br>
+            <p><span style="margin-left: 200px;">Amaging</span> <span style="margin-left: 50px;">Good</span> <span style="margin-left: 50px;">Decent</span><span style="margin-left: 50px;">Disappointing</span></p><br><br>
+            <p>Food Quality <span style="margin-left: 127px;"><input type="radio" value="opt" name="opt"></span><span style="margin-left: 90px;"><input type="radio" value="opt" name="opt"><span style="margin-left: 90px;"><input type="radio" value="opt" name="opt"><span style="margin-left: 90px;"><input type="radio" value="opt" name="opt"></p><br><br>
+            <p>Overal Service <br>Quality <span style="margin-left: 164px;"><input type="radio" value="opt1" name="opt1"></span><span style="margin-left: 90px;"><input type="radio" value="opt1" name="opt1"><span style="margin-left: 90px;"><input type="radio" value="opt1" name="opt1"><span style="margin-left: 90px;"><input type="radio" value="opt1" name="opt1"></p><br><br>
+            <p>Speed Of <br> Service <span style="margin-left: 165px;"><input type="radio" value="opt2" name="opt2"></span><span style="margin-left: 89px;"><input type="radio" value="opt2" name="opt2"><span style="margin-left: 90px;"><input type="radio" value="opt2" name="opt2"><span style="margin-left: 91px;"><input type="radio" value="opt2" name="opt2"></p><br><br>
+            <p>Price <span style="margin-left: 181px;"><input type="radio" value="opt3" name="opt3"></span><span style="margin-left: 89px;"><input type="radio" value="opt3" name="opt3"><span style="margin-left: 89px;"><input type="radio" value="opt3" name="opt3"><span style="margin-left: 91px;"><input type="radio" value="opt3" name="opt3"></p><br><br>
+            <p>Overal <br> Experiance <span style="margin-left: 141px;"><input type="radio" value="opt4" name="opt4"></span><span style="margin-left: 90px;"><input type="radio" value="opt4" name="opt4"><span style="margin-left: 89px;"><input type="radio" value="opt4" name="opt4"><span style="margin-left: 91px;"><input type="radio" value="opt4" name="opt4"></p><br><br>
+            <label for="text">Any Comments , questions or Suggestions ?</label><br><br>
+            <textarea id="text" cols="80" rows="5" placeholder="Text here" style="padding: 10px; outline: none; border: none;"></textarea><br><br>
+            <button id="feed">SEND FEEDBACK</button>
+            <br><br><br>
+            </header><br><br><br><br><br><br><br><br>
+        </form>
+        </form>
+    </section>
+
+    <!-- Footer Page -->
+    
+    <footer>
+        <p id="footp1">Choose healthy. Be strong. Live long.</p> <br>
+            <div class="footeritems">
+                <div class="services1">
+                    <h2>Ourservices</h2><br>
+                    <ul>
+                        <li>Non Veg Food</li>
+                        <li>Veg Food</li>
+                         <li> Fruit Juices</li>
+                    </ul>
+                </div>
+                <div class="reports">
+                    <h2>Helpful Links</h2><br>
+                    <ul>
+                        <li>About us</li>
+                        <li>Contact Us</li>
+                        <li>Terms & conditions</li>
+                        <li>Privacy and policy</li>
+                        <li>Bug Report</li>
+                    </ul>
+                </div>
+                <div class="notify">
+                   <form>
+                    <h2>Notifications</h2><br>
+                    <input type="email" placeholder="Email..." required><br><br>
+                    <button>Get Notify</button><br><br>
+                   </form>
+                </div><br><br>
+                <div class="ordernow">
+                    <h2>Hurry Up.....!</h2>
+<pre>
+
+<button class="btnordernow"><a href="./menu.html">Order Now</a></button>
+</pre>
+                </div>
+                <div class="address">
+<h2>Address : </h2>
+                        <pre>
+<address>
+1-47 , Santha Market
+Katrenikona , Katrenikona 
+Mandal , East godavari , 
+Andhra Pradesh , India.
+</address>
+                        </pre>
+                </div>
+            </div>
+            <div class="footericons">
+                <a href="Email : satyanarayanakatta2003@gmail.com"></a>
+                <abbr title="Email : satyanarayanakatta2003@gmail.com"><img src="./images/4672500.png" alt="gamil" width="35px"></abbr>
+                <a href="#"><img src="./images/Youtube Icon (PNG1080p) - Vector69Com.png" alt="Youtube" width="40px"></a>
+                <a href="#"><img src="./images/download (1).png" alt="facebook" width="40px" style="border-radius: 50%;"></a>
+                <a href="#"><img src="./images/pngwing.com.png" alt="Insta" width="43px"></a>
+                <a href="#"><img src="./images/instagram-logo-7596E83E98-seeklogo.com.png" alt="Insta" width="45px"></a>
+            </div>
+    </footer>
+
+    <!-- Copy right content -->
+    
+    <div class="footer1">
+        <p>Copyright &copy; 2023. All Rights Reserved By Satyanarayana Katta </p>
+    </div>
+</body>
+</html>
